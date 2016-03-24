@@ -1,0 +1,1 @@
+Montecoin is a mixed POW/POS cryptocurrency.

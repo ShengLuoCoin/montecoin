@@ -1,0 +1,9 @@
+Building Montecoin
+
+See doc/readme-qt.rst for instructions on building Montecoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Montecoin.
+
+See doc/build-*.txt for instructions on building Montecoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Montecoin.

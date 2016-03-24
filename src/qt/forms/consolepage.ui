@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConsolePage</class>
+ <widget class="QWidget" name="ConsolePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string notr="true">&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearButton">
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Clear console</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../bitcoin.qrc">
+         <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+       </property>
+       <property name="shortcut">
+        <string notr="true">Ctrl+L</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>2</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>2</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QTextEdit" name="messagesWidget">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="tabKeyNavigation" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="columnCount" stdset="0">
+        <number>2</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="helpWidget">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(238, 244, 255);</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#55aaff;&quot;&gt;&amp;gt;&amp;gt;help&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Monospace'; font-size:12px; color:#55aaff; vertical-align:middle;&quot;&gt;addmultisigaddress &amp;lt;nrequired&amp;gt; &amp;lt;'[&amp;quot;key&amp;quot;,&amp;quot;key&amp;quot;]'&amp;gt; [account]&lt;br /&gt;backupwallet &amp;lt;destination&amp;gt;&lt;br /&gt;checkwallet&lt;br /&gt;createrawtransaction [{&amp;quot;txid&amp;quot;:txid,&amp;quot;vout&amp;quot;:n},...] {address:amount,...}&lt;br /&gt;decoderawtransaction &amp;lt;hex string&amp;gt;&lt;br /&gt;dumpprivkey &amp;lt;Montecoinaddress&amp;gt;&lt;br /&gt;getaccount &amp;lt;Montecoinaddress&amp;gt;&lt;br /&gt;getaccountaddress &amp;lt;account&amp;gt;&lt;br /&gt;getaddressesbyaccount &amp;lt;account&amp;gt;&lt;br /&gt;getbalance [account] [minconf=1]&lt;br /&gt;getblock &amp;lt;hash&amp;gt; [txinfo]&lt;br /&gt;getblock &amp;lt;number&amp;gt; [txinfo]&lt;br /&gt;getblockcount&lt;br /&gt;getblockhash &amp;lt;index&amp;gt;&lt;br /&gt;getblocktemplate [params]&lt;br /&gt;getcheckpoint&lt;br /&gt;getconnectioncount&lt;br /&gt;getdifficulty&lt;br /&gt;getgenerate&lt;br /&gt;gethashespersec&lt;br /&gt;getinfo&lt;br /&gt;getmininginfo&lt;br /&gt;getnewaddress [account]&lt;br /&gt;getnewpubkey [account]&lt;br /&gt;getpeerinfo&lt;br /&gt;getrawmempool&lt;br /&gt;getrawtransaction &amp;lt;txid&amp;gt; [verbose=0]&lt;br /&gt;getreceivedbyaccount &amp;lt;account&amp;gt; [minconf=1]&lt;br /&gt;getreceivedbyaddress &amp;lt;Montecoinaddress&amp;gt; [minconf=1]&lt;br /&gt;gettransaction &amp;lt;txid&amp;gt;&lt;br /&gt;getwork [data]&lt;br /&gt;getworkex [data, coinbase]&lt;br /&gt;help [command]&lt;br /&gt;importprivkey &amp;lt;Montecoinprivkey&amp;gt; [label]&lt;br /&gt;keypoolrefill&lt;br /&gt;listaccounts [minconf=1]&lt;br /&gt;listaddressgroupings&lt;br /&gt;listreceivedbyaccount [minconf=1] [includeempty=false]&lt;br /&gt;listreceivedbyaddress [minconf=1] [includeempty=false]&lt;br /&gt;listsinceblock [blockhash] [target-confirmations]&lt;br /&gt;listtransactions [account] [count=10] [from=0]&lt;br /&gt;listunspent [minconf=1] [maxconf=9999999] [&amp;quot;address&amp;quot;,...]&lt;br /&gt;makekeypair [prefix]&lt;br /&gt;move &amp;lt;fromaccount&amp;gt; &amp;lt;toaccount&amp;gt; &amp;lt;amount&amp;gt; [minconf=1] [comment]&lt;br /&gt;repairwallet&lt;br /&gt;resendtx&lt;br /&gt;reservebalance [&amp;lt;reserve&amp;gt; [amount]]&lt;br /&gt;sendalert &amp;lt;message&amp;gt; &amp;lt;privatekey&amp;gt; &amp;lt;minver&amp;gt; &amp;lt;maxver&amp;gt; &amp;lt;priority&amp;gt; &amp;lt;id&amp;gt; [cancelupto]&lt;br /&gt;sendfrom &amp;lt;fromaccount&amp;gt; &amp;lt;toMontecoinaddress&amp;gt; &amp;lt;amount&amp;gt; [minconf=1] [comment] [comment-to]&lt;br /&gt;sendmany &amp;lt;fromaccount&amp;gt; {address:amount,...} [minconf=1] [comment]&lt;br /&gt;sendrawtransaction &amp;lt;hex string&amp;gt;&lt;br /&gt;sendtoaddress &amp;lt;Montecoinaddress&amp;gt; &amp;lt;amount&amp;gt; [comment] [comment-to]&lt;br /&gt;setaccount &amp;lt;Montecoinaddress&amp;gt; &amp;lt;account&amp;gt;&lt;br /&gt;setgenerate &amp;lt;generate&amp;gt; [genproclimit]&lt;br /&gt;settxfee &amp;lt;amount&amp;gt;&lt;br /&gt;signmessage &amp;lt;Montecoinaddress&amp;gt; &amp;lt;message&amp;gt;&lt;br /&gt;signrawtransaction &amp;lt;hex string&amp;gt; [{&amp;quot;txid&amp;quot;:txid,&amp;quot;vout&amp;quot;:n,&amp;quot;scriptPubKey&amp;quot;:hex},...] [&amp;lt;privatekey1&amp;gt;,...] [sighashtype=&amp;quot;ALL&amp;quot;]&lt;br /&gt;stop &amp;lt;detach&amp;gt;&lt;br /&gt;submitblock &amp;lt;hex data&amp;gt; [optional-params-obj]&lt;br /&gt;validateaddress &amp;lt;Montecoinaddress&amp;gt;&lt;br /&gt;validatepubkey &amp;lt;Montecoinpubkey&amp;gt;&lt;br /&gt;verifymessage &amp;lt;Montecoinaddress&amp;gt; &amp;lt;signature&amp;gt; &amp;lt;message&amp;gt;&lt;br /&gt;walletlock&lt;br /&gt;walletpassphrase &amp;lt;passphrase&amp;gt; &amp;lt;timeout&amp;gt; [mintonly]&lt;br /&gt;walletpassphrasechange &amp;lt;oldpassphrase&amp;gt; &amp;lt;newpassphrase&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="tabKeyNavigation" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="columnCount" stdset="0">
+        <number>2</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>line</zorder>
+  <zorder>verticalSpacer</zorder>
+  <zorder>verticalSpacer_2</zorder>
+ </widget>
+ <resources>
+  <include location="../bitcoin.qrc"/>
+ </resources>
+ <connections/>
+</ui>
